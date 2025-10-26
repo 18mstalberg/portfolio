@@ -1,11 +1,14 @@
+import ProfileCard from "../../../features/portfolio/components/ProfileCard";
 import Resume from "../../../features/portfolio/components/Resume";
 
 const PortfolioRoute = () => {
     return (
-        <div className="p-2 flex-col">
-            <p className="text-3xl">Micah Stalberg</p>
-            <Resume />
-            <a href="https://www.linkedin.com/in/micah-stalberg-490101182/">Link to my LinkedIn</a>
+        <div className="profile-route-container">
+            <ProfileCard />
+            <div className="">
+                <Resume />
+                <a href="https://www.linkedin.com/in/micah-stalberg-490101182/">Link to my LinkedIn</a>
+            </div>
         </div>
     );
 }
