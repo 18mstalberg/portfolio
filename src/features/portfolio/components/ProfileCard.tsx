@@ -5,7 +5,7 @@ const ProfileCard = () => {
     return (
         <aside
             id="profile-card"
-            className="h-full w-full md:max-w-sm rounded-3xl border border-(--border) bg-(--bg-elevated) sm:p-8 p-4"
+            className="h-full w-full md:max-w-xs rounded-3xl border border-(--border) bg-(--bg-elevated) sm:p-8 p-4"
         >
             <div className="h-full flex flex-col items-center text-center">
                 <div className="h-full w-full relative mb-8 flex flex-col items-center ">
