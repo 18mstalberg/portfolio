@@ -6,7 +6,7 @@ import { education, experiences, skillCategories } from "./resumeData";
 
 const ResumeContent = () => {
     return (
-        <div >
+        <div className="space-y-3">
             <ExperienceSection experiences={experiences} />
             <SkillsSection skillCategories={skillCategories} />
             <EducationSection education={education} />

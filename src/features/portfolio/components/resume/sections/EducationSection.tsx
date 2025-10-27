@@ -18,16 +18,11 @@ const EducationSection = ({ education }: EducationSectionProps) => {
             </header>
             <div className="space-y-5">
                 {education.map((item) => (
-                    <div key={item.title} className="space-y-1 border-l border-(--border) pl-4">
-                        <h4 className="text-base font-semibold text-(--text-primary)">{item.title}</h4>
-                        {item.details ? <p className="text-sm text-(--text-secondary)">{item.details}</p> : null}
+                    <div key={item.title} className="space-y-1">
+                        <h4 className="text-base font-semibold text-(--text-primary) text-left">{item.title}</h4>
+                        {item.details ? <p className="text-sm text-(--text-secondary) text-left">{item.details}</p> : null}
                     </div>
                 ))}
-            </div>
-            <div className="space-y-2">
-                <h4 className="text-sm font-semibold uppercase tracking-wide text-(--text-primary)">
-                    Relevant Courses &amp; Skills
-                </h4>
             </div>
         </section>
     );

@@ -70,6 +70,7 @@ export const education: Education[] = [
     },
     {
         title: "Certified Cloud Practitioner (CLF-C02) — Amazon Web Services (AWS)",
+        details: "June 2025"
     },
 ];
 
