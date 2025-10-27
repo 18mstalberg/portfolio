@@ -11,7 +11,7 @@ const ProfileCard = () => {
                 <div className="h-full w-full relative mb-8 flex flex-col items-center ">
                     <div className="w-full overflow-hidden rounded-2xl border border-(--border) shadow-inner shadow-black/40">
                         <img
-                            src="/profile.jpg"
+                            src="profile.jpg"
                             alt="Profile"
                             className="h-full w-full object-cover"
                         />

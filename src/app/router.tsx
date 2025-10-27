@@ -11,7 +11,9 @@ const router = createBrowserRouter([
         path: '/login',
         element: <LoginRoute />
     }
-])
+], {
+    basename: '/portfolio'
+})
 
 export const AppRouter = () => {
     return <RouterProvider router={router} />;
