@@ -6,17 +6,17 @@ interface ObjectiveSummaryProps {
 
 const ObjectiveSummary = ({ objective }: ObjectiveSummaryProps) => {
     return (
-        <div className="space-y-6">
-            <div className="flex items-center gap-3">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-(--accent) bg-(--bg-secondary) text-(--accent)">
-                    <FaUser className="text-xl" />
+        <section className="space-y-4">
+            <header className="flex items-center gap-3">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-(--accent-muted) text-(--accent)">
+                    <FaUser className="text-base" />
                 </span>
-                <h3 className="text-xl font-semibold text-(--text-primary)">Professional Snapshot</h3>
-            </div>
-            <div className="rounded-3xl border border-(--border) bg-(--bg-secondary) p-8 shadow-inner">
-                <p className="text-lg font-semibold text-(--text-primary)">{objective}</p>
-            </div>
-        </div>
+                <h3 className="text-lg font-semibold uppercase tracking-[0.2em] text-(--text-secondary)">
+                    Professional Summary
+                </h3>
+            </header>
+            <p className="border-l-2 border-(--accent) pl-6 text-base leading-relaxed text-(--text-primary)">{objective}</p>
+        </section>
     );
 };
 
