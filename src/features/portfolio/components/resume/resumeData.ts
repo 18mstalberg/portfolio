@@ -73,9 +73,6 @@ export const education: Education[] = [
     },
 ];
 
-export const relevantCourses =
-    "Advanced Web Development, React.js, Node.js, Server-side rendering, RESTful APIs, Authentication, Databases, MySQL, PostgreSQL, MongoDB, Data Structures & Algorithms, Machine Learning, Python, scikit-learn, TensorFlow, Network Programming, Software Engineering, Testing, Git";
-
 export type SkillCategory = {
     title: string;
     skills: string[];
@@ -83,19 +80,19 @@ export type SkillCategory = {
 
 export const skillCategories: SkillCategory[] = [
     {
-        title: "Frontend",
-        skills: ["JavaScript", "TypeScript", "React"],
+        title: "Frontend Web/Mobile Development",
+        skills: ["TypeScript", "React", "Next.js", "Tailwind CSS", "HTML5", "CSS3", "Flutter", "Dart"],
     },
     {
-        title: "Mobile & Cross-Platform",
-        skills: ["Flutter"],
-    },
-    {
-        title: "Backend & Data",
-        skills: ["Python", "PostgreSQL"],
+        title: "Backend & APIs",
+        skills: ["Node.js", "Ruby on Rails", "Python", "PostgreSQL", "mySQL", "Supabase", "GraphQL"],
     },
     {
         title: "Cloud & DevOps",
-        skills: ["AWS", "Supabase", "Terraform"],
+        skills: ["AWS (Lambda, RDS, S3, Codebuild, IAM, Cognito, etc.)", "Terraform", "Docker", "GitHub Actions"],
+    },
+    {
+        title: "Tooling & Workflow",
+        skills: ["Git", "Jest", "Postman", "Figma", "Sentry", "Amplitude", "Mixpanel", " VSCode"],
     },
 ];

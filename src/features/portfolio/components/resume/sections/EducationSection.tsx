@@ -3,10 +3,9 @@ import type { Education } from "../resumeData";
 
 interface EducationSectionProps {
     education: Education[];
-    relevantCourses: string;
 }
 
-const EducationSection = ({ education, relevantCourses }: EducationSectionProps) => {
+const EducationSection = ({ education }: EducationSectionProps) => {
     return (
         <section className="space-y-6">
             <header className="flex items-center gap-3">
@@ -29,7 +28,6 @@ const EducationSection = ({ education, relevantCourses }: EducationSectionProps)
                 <h4 className="text-sm font-semibold uppercase tracking-wide text-(--text-primary)">
                     Relevant Courses &amp; Skills
                 </h4>
-                <p className="text-sm leading-relaxed text-(--text-secondary)">{relevantCourses}</p>
             </div>
         </section>
     );

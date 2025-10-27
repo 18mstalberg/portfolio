@@ -16,15 +16,24 @@ const SkillsSection = ({ skillCategories }: SkillsSectionProps) => {
             </header>
             <div className="grid gap-6 sm:grid-cols-2">
                 {skillCategories.map((category) => (
-                    <div key={category.title} className="space-y-2">
-                        <h4 className="text-sm font-semibold uppercase tracking-wide text-(--text-primary)">
+                    <div
+                        key={category.title}
+                        className="rounded-lg border border-(--muted) bg-(--card) p-4 shadow-sm"
+                    >
+                        <h4 className="text-sm font-semibold uppercase tracking-wide text-(--text-primary) mb-3">
                             {category.title}
                         </h4>
-                        <ul className="ml-5 list-disc space-y-1 text-sm text-(--text-secondary)">
+
+                        <div className="flex flex-wrap justify-center gap-2">
                             {category.skills.map((skill) => (
-                                <li key={skill}>{skill}</li>
+                                <span
+                                    key={skill}
+                                    className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-(--accent-muted) text-(--accent)"
+                                >
+                                    {skill}
+                                </span>
                             ))}
-                        </ul>
+                        </div>
                     </div>
                 ))}
             </div>
