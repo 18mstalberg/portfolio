@@ -19,19 +19,25 @@ const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
                     <article key={experience.id} className="space-y-3">
                         <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
                             <div>
-                                <h4 className="text-xl font-semibold text-(--text-primary)">{experience.role}</h4>
-                                <p className="text-sm text-(--text-secondary)">
+                                <h4 className="text-xl font-semibold text-(--text-primary) text-left">{experience.role}</h4>
+                                <p className="text-sm text-(--text-secondary) text-left">
                                     {experience.company} — {experience.location}
                                 </p>
                             </div>
-                            <span className="text-sm font-medium uppercase tracking-wide text-(--text-tertiary)">
+                            <span className="text-sm font-medium uppercase text-(--text-tertiary)">
                                 {experience.timeframe}
                             </span>
                         </div>
-                        {experience.technologies ? (
-                            <p className="text-sm text-(--text-secondary)">{experience.technologies}</p>
-                        ) : null}
-                        <ul className="ml-5 list-disc space-y-2 text-sm text-(--text-secondary)">
+                        {experience.technologies && (
+                            <p className="text-sm text-(--text-secondary) text-left">
+                                <span className="font-semibold text-(--text-primary)">
+                                    Technologies:{" "}
+                                </span>
+                                {experience.technologies}
+                            </p>
+
+                        )}
+                        <ul className="ml-5 list-disc space-y-2 text-sm text-(--text-secondary) text-left">
                             {experience.achievements.map((achievement) => (
                                 <li key={achievement} className="leading-relaxed">
                                     {achievement}

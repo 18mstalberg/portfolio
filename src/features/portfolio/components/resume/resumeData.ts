@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
         location: "Bend, OR",
         timeframe: "June 2024 – Current",
         technologies:
-            "Technologies: Flutter, Supabase, Firebase, AWS (RDS, S3, Lambda, Amplify, Cognito, CodeBuild), Terraform, React, PostgreSQL, TypeScript, Ruby on Rails, Python (incl. Computer Vision), SQL & NoSQL",
+            "Flutter, Supabase, Firebase, AWS (RDS, S3, Lambda, Amplify, Cognito, CodeBuild), Terraform, React, PostgreSQL, TypeScript, Ruby on Rails, Python (incl. Computer Vision), SQL & NoSQL",
         achievements: [
             "Architected, developed, and deployed cross-platform mobile applications using Flutter to production (App Store & Google Play).",
             "Led implementation of secure, anonymous authentication and robust session management with role-based access controls.",
