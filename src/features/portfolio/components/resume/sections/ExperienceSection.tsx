@@ -23,6 +23,11 @@ const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
                                 <p className="text-sm text-(--text-secondary) text-left">
                                     {experience.company} — {experience.location}
                                 </p>
+                                {experience.employmentNote && (
+                                    <p className="text-xs text-(--text-tertiary) text-left">
+                                        {experience.employmentNote}
+                                    </p>
+                                )}
                             </div>
                             <span className="text-sm font-medium uppercase text-(--text-tertiary)">
                                 {experience.timeframe}
