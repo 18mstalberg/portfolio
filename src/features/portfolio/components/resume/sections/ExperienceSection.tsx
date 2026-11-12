@@ -14,9 +14,10 @@ const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
                 </span>
                 <h3 className="text-lg font-semibold uppercase tracking-[0.2em] text-(--text-secondary)">Experience</h3>
             </header>
-            <div className="space-y-8">
+            {/* Articles bleed out by their padding (-mx-5) so text stays aligned with the headers at rest. */}
+            <div className="space-y-3">
                 {experiences.map((experience) => (
-                    <article key={experience.id} className="space-y-3">
+                    <article key={experience.id} className="lift -mx-5 space-y-3 p-5">
                         <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
                             <div>
                                 <h4 className="text-xl font-semibold text-(--text-primary) text-left">{experience.role}</h4>

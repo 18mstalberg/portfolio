@@ -16,10 +16,7 @@ const SkillsSection = ({ skillCategories }: SkillsSectionProps) => {
             </header>
             <div className="grid gap-6 sm:grid-cols-2">
                 {skillCategories.map((category) => (
-                    <div
-                        key={category.title}
-                        className="rounded-lg border border-(--muted) bg-(--card) p-4 shadow-sm"
-                    >
+                    <div key={category.title} className="lift p-4">
                         <h4 className="text-sm font-semibold uppercase tracking-wide text-(--text-primary) mb-3">
                             {category.title}
                         </h4>

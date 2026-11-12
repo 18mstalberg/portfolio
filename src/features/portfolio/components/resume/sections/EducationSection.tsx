@@ -16,9 +16,9 @@ const EducationSection = ({ education }: EducationSectionProps) => {
                     Education &amp; Certifications
                 </h3>
             </header>
-            <div className="space-y-5">
+            <div className="space-y-1">
                 {education.map((item) => (
-                    <div key={item.title} className="space-y-1">
+                    <div key={item.title} className="lift -mx-5 space-y-1 px-5 py-3">
                         <h4 className="text-base font-semibold text-(--text-primary) text-left">{item.title}</h4>
                         {item.details ? <p className="text-sm text-(--text-secondary) text-left">{item.details}</p> : null}
                     </div>
