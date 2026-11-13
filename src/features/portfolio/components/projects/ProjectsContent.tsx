@@ -5,7 +5,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
     const { github, demo, appStore, googlePlay } = project.links ?? {};
 
     return (
-        <article className="lift -mx-5 space-y-4 p-5 text-left">
+        <article className="space-y-4 rounded-xl border border-(--border) bg-(--bg-secondary) p-6 text-left">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                 <div className="space-y-1">
                     <div className="flex flex-wrap items-center gap-2">
@@ -75,7 +75,7 @@ const ProjectsContent = () => {
     const sorted = [...projects].sort((a, b) => Number(b.featured ?? false) - Number(a.featured ?? false));
 
     return (
-        <div className="space-y-3">
+        <div className="space-y-6">
             {sorted.map((project) => (
                 <ProjectCard key={project.id} project={project} />
             ))}

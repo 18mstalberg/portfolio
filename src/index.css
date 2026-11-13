@@ -16,6 +16,7 @@
   --accent: #10b981;
   --accent-hover: #059669;
   --accent-light: #34d399;
+  --accent-muted: rgba(16, 185, 129, 0.12);
 
   --border: #262626;
 
@@ -141,72 +142,9 @@ button:focus-visible {
 
     --accent: #059669;
     --accent-hover: #047857;
+    --accent-muted: rgba(5, 150, 105, 0.1);
 
     --border: #e5e5e5;
-  }
-}
-
-:root {
-  --lift-crown: #2a2a2a;
-  --lift-light: rgba(255, 255, 255, 0.05);
-  --lift-shade: rgba(0, 0, 0, 0.5);
-  --lift-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --lift-crown: #ffffff;
-    --lift-light: rgba(255, 255, 255, 0.8);
-    --lift-shade: rgba(0, 0, 0, 0.12);
-  }
-}
-
-.lift {
-  position: relative;
-  isolation: isolate;
-  transition: transform 500ms var(--lift-ease);
-}
-
-.lift::before {
-  content: "";
-  position: absolute;
-  inset: 12px 16px;
-  z-index: -1;
-  border-radius: 2rem;
-  background: var(--lift-crown);
-  box-shadow:
-    0 0 28px 14px var(--lift-crown),
-    0 -8px 30px 10px var(--lift-light),
-    0 16px 36px 4px var(--lift-shade);
-  filter: blur(3px);
-  opacity: 0;
-  transform: scale(0.96);
-  pointer-events: none;
-  transition:
-    opacity 500ms var(--lift-ease),
-    transform 500ms var(--lift-ease);
-}
-
-@media (hover: hover) {
-  .lift:hover {
-    transform: translateY(-3px) scale(1.015);
-  }
-
-  .lift:hover::before {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .lift,
-  .lift::before {
-    transition: opacity 200ms ease;
-  }
-
-  .lift:hover,
-  .lift:hover::before {
-    transform: none;
   }
 }
 
